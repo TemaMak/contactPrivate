@@ -14,10 +14,6 @@ class PluginContactprivate_HookContactprivate extends Hook
     public function showContactPrivateSetting($aParams)
     {        
     	$oTopic = $aParams['oTopic'];
-    	if ($oTopic->getPublish()==1 ){    		
-    		$oTopic->setBlog($this->Blog_GetBlogById($oTopic->getBlogId()));
-    		$this->PluginCastuser_Cast_sendCastNotify('topic',$oTopic,null,$oTopic->getTextSource());
-    	}
     	
     	//$this->Viewer_Assign('aSubscribeUsers',$aSubscribeUsers);
     	//$this->Viewer_Assign('iSubscribeCount',count($aSubscribeUsers));

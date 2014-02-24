@@ -1,11 +1,12 @@
 <?php
 
 return array(
-    'lsgallery_title' => 'Галерея',
+    'contact_private_setting' => 'Контакты видны',
 
-	'notify_title' => array(
-		'topic' => 'Вас упомянули в топике',
-		'comment' => 'Вас упомянули в комментарии'
+	'private_setting_value' => array(
+		'all' => 'Всем',
+		'registered' => 'Зарегистрированным пользователям',
+		'friends' => 'Друзьям',
 	),
 
 );
