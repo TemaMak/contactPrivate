@@ -8,18 +8,15 @@ if (!class_exists('Plugin')) {
 }
 
 class PluginContactprivate extends Plugin {
-
-	
-	
+		
     public $aInherits = array(
-
         'module' => array(
             'ModuleUser' => '_ModuleUser',
         ),
     );
 	
     public function Activate() {
-        if (!$this->isTableExists('prefix_user_cast_history')) {
+        if (!$this->isTableExists('prefix_private_setting')) {
             $resutls = $this->ExportSQL(dirname(__FILE__) . '/activate.sql');
             return $resutls['result'];
         }
